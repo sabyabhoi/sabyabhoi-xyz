@@ -2,19 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	@apply transition-all duration-100;
+}
+
 body {
-	@apply max-w-4xl mx-auto bg-slate-900 text-gray-200 font-mono;
+	@apply max-w-4xl mx-auto bg-nord-white dark:bg-slate-900 dark:text-gray-200 font-mono;
 }
 
 h1 {
-	@apply text-4xl font-bold pt-4 pb-1 underline decoration-[5] underline-offset-4
-	decoration-gray-500 hover:decoration-gray-300 transition-all;
+	@apply text-3xl font-bold pt-4 pb-1 underline decoration-[5] underline-offset-4
+	dark:decoration-gray-500 dark:hover:decoration-gray-300 transition-all;
 }
 
-ul, ul {
+ul {
 	@apply pl-5 list-disc list-outside
 }
 
-a {
-	@apply text-blue-300
+a  {
+	@apply dark:text-blue-300
+}
+
+[astro-icon] {
+	@apply text-black dark:text-white;
 }

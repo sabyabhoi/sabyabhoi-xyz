@@ -1,5 +1,5 @@
 ---
-import HeaderLink from './HeaderLink.astro';
+import { Icon } from 'astro-icon'
 import { SITE_TITLE } from '../config';
 ---
 
@@ -7,11 +7,23 @@ import { SITE_TITLE } from '../config';
 	<h2 class="text-lg font-bold">
 		{SITE_TITLE}
 	</h2>
-	<nav class="flex flex-row justify-between gap-x-8">
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+	<nav class="flex flex-row justify-between gap-x-8 items-center">
+	  <button id="theme-toggle" class="outline-none"><Icon name="fluent:dark-theme-20-filled" class="w-7 text-white"/></button>
 	</nav>
 </header>
+
+<script>
+ const setThemeBasedOnLocalStorage = () => {
+   if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+	 document.documentElement.classList.add('dark')
+   } else {
+	 document.documentElement.classList.remove('dark')
+   }
+ };
+ setThemeBasedOnLocalStorage();
+ const button = document.getElementById('theme-toggle');
+ button.addEventListener('click', () => {
+   localStorage.theme = localStorage.theme === "dark" ? "light" : "dark";
+   setThemeBasedOnLocalStorage();
+ });
+</script>

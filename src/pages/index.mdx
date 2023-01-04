@@ -3,6 +3,8 @@ layout: "../layouts/Index.astro"
 title: Hello sailor
 ---
 
+import IconLink from "../components/IconLink.astro"
+
 # Work
 
 I\'m a third-year engineering student at Birla Institute of Technology
@@ -27,6 +29,7 @@ projects.
     -   Next.js
     -   Solid.js
     -   Svelte
+	-   Astro.js
 -   Dart/Flutter
 -   Bash scripting
 -   LaTeX
@@ -34,6 +37,6 @@ projects.
 
 # On The Web
 
--   \@sabyabhoi
--   sabyabhoi
--   sabyabhoi@gmail.com
+<IconLink url="https://github.com/sabyabhoi/" name="@sabyabhoi" icon="mdi:github"/>
+<IconLink url="https://www.linkedin.com/in/sabyabhoi/" name="sabyabhoi" icon="mdi:linkedin"/>
+<IconLink url="mailto:sabyabhoi@gmail.com" name="sabyabhoi@gmail.com" icon="ic:baseline-mail"/>
