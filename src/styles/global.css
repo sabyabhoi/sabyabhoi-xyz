@@ -7,7 +7,7 @@
 }
 
 body {
-	@apply max-w-4xl mx-auto bg-nord-white dark:bg-slate-900 dark:text-gray-200 font-mono;
+	@apply max-w-5xl px-4 mx-auto text-nord0 bg-nord6 dark:bg-nord-1 dark:text-nord4 font-mono;
 }
 
 h1 {
@@ -20,7 +20,7 @@ ul {
 }
 
 a  {
-	@apply dark:text-blue-300
+	@apply text-nord10 dark:text-nord8
 }
 
 [astro-icon] {

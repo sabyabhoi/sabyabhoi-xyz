@@ -3,7 +3,8 @@ layout: "../layouts/Index.astro"
 title: Hello sailor
 ---
 
-import IconLink from "../components/IconLink.astro"
+import IconLink from "../components/IconLink.astro";
+import Card from "../components/Card.astro";
 
 # Work
 
@@ -12,31 +13,60 @@ and Science. I\'m a Linux enthusiast. I use GNU/Linux as my primary
 driver, and like to tinker around with new, free and open-source
 projects.
 
+# Projects
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 align-center mt-3">
+  <Card title="sabyabhoi.xyz" url="https://sabyabhoi.xyz/">
+    A portfolio website made using Astro.js
+  </Card>
+  <Card title="WorkItOut" url="https://github.com/sabyabhoi/WorkItOut">
+    A Pomodoro app for focussing on your tasks
+  </Card>
+  <Card title="boi-ctf" url="https://github.com/sabyabhoi/boi-ctf">
+    A Capture-The-Flag Server for improving your cyber-security skills
+  </Card>
+  <Card title="BoiChat" url="https://github.com/sabyabhoi/BoiChat">
+    A chat application made using supabase and next.js
+  </Card>
+</div>
+
 # Skills
 
--   C/C++
--   Rust
--   GoLang
--   Python
-    -   Pandas
-    -   Matplotlib
-    -   Scikit-Learn
-    -   Tensorflow
--   R
--   HTML/CSS
--   Javascript/Typescript
-    -   React.js
-    -   Next.js
-    -   Solid.js
-    -   Svelte
-	-   Astro.js
--   Dart/Flutter
--   Bash scripting
--   LaTeX
--   groff/nroff
+- C/C++
+- Rust
+- GoLang
+- Python
+  - Pandas
+  - Matplotlib
+  - Scikit-Learn
+  - Tensorflow
+- R
+- HTML/CSS
+- Javascript/Typescript
+  - React.js
+  - Next.js
+  - Solid.js
+  - Svelte
+  - Astro.js
+- Dart/Flutter
+- Bash scripting
+- LaTeX
+- groff/nroff
 
 # On The Web
 
-<IconLink url="https://github.com/sabyabhoi/" name="@sabyabhoi" icon="mdi:github"/>
-<IconLink url="https://www.linkedin.com/in/sabyabhoi/" name="sabyabhoi" icon="mdi:linkedin"/>
-<IconLink url="mailto:sabyabhoi@gmail.com" name="sabyabhoi@gmail.com" icon="ic:baseline-mail"/>
+<IconLink
+  url="https://github.com/sabyabhoi/"
+  name="@sabyabhoi"
+  icon="mdi:github"
+/>
+<IconLink
+  url="https://www.linkedin.com/in/sabyabhoi/"
+  name="sabyabhoi"
+  icon="mdi:linkedin"
+/>
+<IconLink
+  url="mailto:sabyabhoi@gmail.com"
+  name="sabyabhoi@gmail.com"
+  icon="ic:baseline-mail"
+/>
