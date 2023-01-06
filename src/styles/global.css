@@ -24,5 +24,5 @@ a  {
 }
 
 [astro-icon] {
-	@apply text-black dark:text-white;
+	@apply text-inherit;
 }
