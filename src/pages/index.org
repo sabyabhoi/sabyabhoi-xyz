@@ -19,6 +19,7 @@ I'm a third-year engineering student at Birla Institute of Technology and Scienc
     - Next.js
     - Solid.js
     - Svelte
+- Docker
 - Dart/Flutter
 - Bash scripting
 - LaTeX
