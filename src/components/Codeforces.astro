@@ -6,8 +6,12 @@ const latestRating = data.result[data.result.length - 1].newRating;
 ---
 
 <div class="flex flex-col items-center">
-  <h1 class="no-underline pt-0">
-    Codeforces rating: 
-    {latestRating}
-  </h1>
+  <a href="https://codeforces.com/profile/CognusBoi">
+    <h1 class="pt-0">
+      Codeforces rating: 
+      <span class="text-nord7">
+       {latestRating} 
+      </span>
+    </h1>
+  </a>
 </div>
